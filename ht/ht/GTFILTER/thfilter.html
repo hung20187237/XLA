@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH filter</title>
+    <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.m.wikipedia.org%2Fwiki%2FT%25E1%25BA%25ADp_tin%3A(G)I-dle_logo.jpg&psig=AOvVaw1pUDdgO_M5iNRATxfaqMQp&ust=1635500931753000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDBqvLp7PMCFQAAAAAdAAAAABAI"
+        type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../asset/css/thfilter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Mr+De+Haviland|Sacramento|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="gtfilter.html">GT filter</a></li>
+                <li><a href="#">TH filter</a></li>
+                <li><a href="frfilter.html">FR filter</a></li>
+                <li><a href="kmfilter.html">KM filter</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#band">Convert</a></li>
+                        <li><a href="#concert">Brightness</a></li>
+                        <li><a href="#concert">GaussianBlur</a></li>
+                        <li><a href="#concert">DarkEffect</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+
+        </div>
+        <div class='recipe-list'>
+            <div class="recipe-title">
+                <h2>TH Filter</h2>
+            </div>
+            <div class="product-center" id='list-category'>
+                <article class="product ">
+                    <div id="0" class="img-container js-click-img ">
+                        <img src="../asset/css/img/slide/Threshold1.jpg" class='product-img' id="original" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Original</h3>
+                    </div>
+                    <div id="1" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/Threshold2.jpg" class='product-img' id="binary" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Binary</h3>
+                    </div>
+                    <div id="2" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/Threshold3.jpg" class='product-img' id="binary-ivn" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Binary-ivn</h3>
+                    </div>
+                    <div id="3" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/Threshold4.jpg" class='product-img' id="trunc" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Trunc</h3>
+                    </div>
+                    <div id="4" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/Threshold5.jpg" class='product-img' id="tozero" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Tozero</h3>
+                    </div>
+                    <div id="5" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/Threshold6.jpg" class='product-img' id="tozero-ivn" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Tozero-ivn</h3>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+        <div class='recipe-list'>
+            <div class="recipe-title">
+                <h2>AT-TH Filter</h2>
+            </div>
+            <div class="product-center" id='list-category'>
+                <article class="product ">
+                    <div id="6" class="img-container js-click-img ">
+                        <img src="../asset/css/img/slide/ADAPTIVE1.jpg" class='product-img' id="original" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Original</h3>
+                    </div>
+                    <div id="7" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/ADAPTIVE2.jpg" class='product-img' id="global" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Global(v = 127)</h3>
+                    </div>
+                    <div id="8" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/ADAPTIVE3.jpg" class='product-img' id="adaptive-mean" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Adaptive Mean</h3>
+                    </div>
+                    <div id="9" class="img-container js-click-img">
+                        <img src="../asset/css/img/slide/ADAPTIVE4.jpg" class='product-img' id="adaptive-gaussian" alt="">
+                        <button class='detail-btn'>Detail</button>
+                        <h3 class="strCategory">Adaptive Gaussian</h3>
+                    </div>
+
+
+                </article>
+            </div>
+        </div>
+        <div id="editimg" class="js-modal3">
+            <div id="edit-body" class="home container py-2">
+                <div class=" Cartoonize text-center">
+                    <h1 class="font-weight-bold h2 pb-3 text-monospace text-shadow">Cartoonize your pictures</h1>
+                    <div class="container-close js-close3">
+                        <i class="ti-close"></i>
+                    </div>
+                    <p>All of your data stays within your browser.</p>
+                    <p class="small">Upload an image or try below examples</p>
+                </div>
+                <div class="card-deck m-4 py-2 px-4">
+                    <div class="card shadow col-md-6">
+                        <div class="card-body px-0 px-sm-2">
+                            <div class="">
+                                <label class="btn btn-primary btn-xs px-2">
+                        Upload your Image <input type="file" id="file" name="file" accept="image/*" hidden>
+                      </label>
+                                <span>or Try below examples</a></span>
+                            </div>
+                            <img id="source" class="d-block img-fluid mx-auto" src="../asset/css/img/slide/yeonwoo.jpg"></img>
+                            <div id="examples" class="mt-2">
+                                <span class="sm2">Click on the images to try</span>
+                                <div class="row px-3">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="../asset/css/img/slide/fiamma.jpg">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="../asset/css/img/slide/caynui.jpg">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="../asset/css/img/slide/baby.jpg">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="../asset/css/img/slide/Thy.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow col-md-6">
+                        <div class="card-body px-0 px-sm-2">
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="card-title">Cartoonized Image</h5>
+                                <a id="download" class="btn btn-xs btn-primary px-2" download="image.jpeg" href="">Download</a>
+                            </div>
+                            <img id="img_res" style="width: 100%;" class="d-block img-fluid mx-auto"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script> -->
+            <script async src="thfilter.js"></script>
+        </div>
+
+</body>

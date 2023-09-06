@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTOON filter</title>
+    <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.m.wikipedia.org%2Fwiki%2FT%25E1%25BA%25ADp_tin%3A(G)I-dle_logo.jpg&psig=AOvVaw1pUDdgO_M5iNRATxfaqMQp&ust=1635500931753000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDBqvLp7PMCFQAAAAAdAAAAABAI"
+        type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./asset/css/Style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Mr+De+Haviland|Sacramento|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="GTFILTER/gtfilter.html">GT filter</a></li>
+                <li><a href="GTFILTER/thfilter.html">TH filter</a></li>
+                <li><a href="GTFILTER/frfilter.html">FR filter</a></li>
+                <li><a href="GTFILTER/kmfilter.html">KM filter</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#band">Convert</a></li>
+                        <li><a href="#concert">Brightness</a></li>
+                        <li><a href="#concert">GaussianBlur</a></li>
+                        <li><a href="#concert">DarkEffect</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+        </div>
+
+
+        <div class="slidershow">
+            <div class="slides">
+                <input class="BT" type="radio" name="bottom" id="bottom_1" checked>
+                <input class="BT" type="radio" name="bottom" id="bottom_2">
+                <input class="BT" type="radio" name="bottom" id="bottom_3">
+                <input class="BT" type="radio" name="bottom" id="bottom_4">
+                <input class="BT" type="radio" name="bottom" id="bottom_5">
+                <div class="slide s1">
+                    <img src="asset/css/img/slide/cartoonized_1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="asset/css/img/slide/cartoonized_5.jpg">
+                </div>
+                <div class="slide">
+                    <img src="asset/css/img/slide/cartoonized_2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="asset/css/img/slide/cartoonized_3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="asset/css/img/slide/cartoonized_4.jpg">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="bottom_1" class="bar"></label>
+                <label for="bottom_2" class="bar"></label>
+                <label for="bottom_3" class="bar"></label>
+                <label for="bottom_4" class="bar"></label>
+                <label for="bottom_5" class="bar"></label>
+            </div>
+        </div>
+        
+
+        <div id="content">
+            <div class="home container py-2">
+                <div class=" Cartoonize text-center">
+                    <h1 class="font-weight-bold h2 pb-3 text-monospace text-shadow">Cartoonize your pictures</h1>
+                    <p>All of your data stays within your browser.</p>
+                    <p class="small">Upload an image or try below examples</p>
+                </div>
+                <div class="card-deck m-4 py-2 px-4">
+                    <div class="card shadow col-md-6">
+                        <div class="card-body px-0 px-sm-2">
+                            <div class="">
+                                <label class="btn btn-primary btn-xs px-2">
+                            Upload your Image <input type="file" id="file" name="file" accept="image/*" hidden>
+                          </label>
+                                <span>or Try below examples</a></span>
+                            </div>
+                            <img id="source" class="d-block img-fluid mx-auto" src="asset/css/img/slide/yeonwoo.jpg"></img>
+                            <div id="examples" class="mt-2">
+                                <span class="sm2">Click on the images to try</span>
+                                <div class="row px-3">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="asset/css/img/slide/fiamma.jpg">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="asset/css/img/slide/caynui.jpg">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="asset/css/img/slide/baby.jpg">
+                                    <img class="col-3 px-1 border h-100 cursor-pointer" src="asset/css/img/slide/Thy.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow col-md-6">
+                        <div class="card-body px-0 px-sm-2">
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <h5 class="card-title">Cartoonized Image</h5>
+                                <a id="download" class="btn btn-xs btn-primary px-2" download="image.jpeg" href="">Download</a>
+                            </div>
+                            <img id="img_res" style="width: 100%;" class="d-block img-fluid mx-auto"></img>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="band" class="content-section">
+                <div class=" Cartoonize CLbanner text-center py-2">
+                    <h2 class="section-heading font-weight-bold text-shadow">CONVERT FILTER</h2>
+                    <h1 class="font-weight-bold h2 pb-3 text-monospace text-shadow">Convert your pictures</h1>
+                </div>
+
+                <div class="card shadow ">
+                    <div class=" cardhien ">
+                        <div class="Upload">
+                            <label class="btn btn-primary btn-xs px-2">
+                              Upload your Image <input type="file" id="file3" name="file" accept="image/*" hidden onChange="send()">
+                            </label>
+                            <span>or Try below examples</a></span>
+                        </div>
+                        <div class="button-result">
+                            <button id="bt1" class=" btn-xs btn-primary btn js-load-img">Result 1</button>
+                            <button id="bt2" class=" btn-xs btn-primary btn js-load-img">Result 2</button>
+                        </div>
+                        <img id="source3" class="d-block img-fluid mx-auto" src="asset/css/img/slide/caynui.jpg"></img>
+                    </div>
+                </div>
+            </div>
+            <div id="concert-section">
+                <div id="concert" class="content-section">
+                    <h2 class="section-heading text-white ">CONCERT</h2>
+                    <div class="card shadow ">
+                        <div class=" cardhien ">
+                            <div class="Upload">
+                                <label class="btn btn-primary btn-xs px-2">
+                                  Upload your Image <input type="file" id="file2" name="file" accept="image/*" hidden">
+                                  </label>
+                                <span>or Try below examples</a></span>
+                            </div>
+                            <img id="source2" class="d-block img-fluid mx-auto" src="asset/css/img/slide/caynui.jpg"></img>
+                        </div>
+                    </div>
+                
+                    <div class="concert-img">
+                        <div id="0" class="img-item mgt-16">
+                            <img id="im1" src="https://file.tinnhac.com/resize/600x-/2020/01/29/20200129054931-76b8.jpg" alt="I-LAND" class="img-place">
+                            <div class="img-body text-center">
+                                <h3 class="img-heading">Brightness</h3>
+                                <button class="buy-btn js-buy-ticket">Result</button>
+                            </div>
+                        </div>
+                        <div  id="1" class="img-item mgt-16">
+                            <img id="im2" src="https://pbs.twimg.com/media/EWF5azkU8AIZ99R?format=jpg&name=small" alt="The Show" class="img-place">
+                            <div class="img-body text-center">
+                                <h3 class="img-heading">GaussianBlur</h3>
+                                <button class="buy-btn js-buy-ticket">Result</button>
+                            </div>
+                        </div>
+                        <div  id="2" class="img-item mgt-16">
+                            <img id="im3" src="https://i.ytimg.com/vi/KUnU131wP2Y/maxresdefault.jpg" alt="M Countdown" class="img-place">
+                            <div class="img-body text-center">
+                                <h3 class="img-heading">DarkEffect</h3>
+                                <button class="buy-btn js-buy-ticket">Result</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Seoul, Hàn Quốc</p>
+                        <p><i class="ti-mobile"></i>Tel: 82-2-3445-1045</p>
+                        <p><i class="ti-world"></i>www.cubeent.co.kr</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" required placeholder="name" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" required placeholder="email" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="row mgt">
+                                <div class="col col-full">
+                                    <input type="text" name="" required placeholder="message" class="form-control">
+                                </div>
+                            </div>
+                            <input class="submit-btn mgt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+          
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/UNITEDCUBE"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/official_g_i_dle/"><i class="ti-instagram"></i></a>
+                <a href="https://www.youtube.com/user/theunitedcube"><i class="ti-youtube"></i></a>
+                <a href="https://weibo.com/u/2641606884"><i class="fab fa-weibo"></i></a>
+                <a href="https://twitter.com/cubeunited"><i class="ti-twitter"></i></a>
+            </div>
+            <p class="copyright">COPYRIGHT(C) CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED</p>
+        </div>
+    </div>
+    <div class="modal js-modal">
+        <div class="container js-container text-center">
+            <div class="container-close js-close">
+                <i class="ti-close text-black-50"></i>
+            </div>
+            <div class="textconvert justify-content-between ">
+                <h5 class="card-title">Convert Image</h5>
+                <a id="download2" class="btn btn-xs btn-primary px-2" download="image.jpeg" href="">Download</a>
+            </div>
+            <img id="img_res2" style="width: 40%;" class="d-block img-fluid mx-auto"></img>
+        </div>
+    </div>
+    <script async src="script.js"></script>
+
+
+</body>
+
+</html>

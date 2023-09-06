@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mgt {
+    margin-top: 8px !important;
+}
+
+.mgt-16 {
+    margin-top: 16px !important;
+}
+
+#header {
+    height: 46px;
+    background-color: rgb(32, 10, 233);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#nav {
+    display: inline-block;
+    font-family: 'Satisfy', 'Sacramento', 'Mr De Haviland', 'Alex Brush';
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav>li {
+    position: relative;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+#nav>li:hover>a {
+    background-color: violet;
+}
+
+#nav .subnav {
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(218, 0, 207, 0.5);
+    background-color: rgba(167, 3, 158, 0.5)
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav li {
+    width: 100%;
+    padding: 0;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover {
+    background-color: violet;
+}
+
+.ti-angle-down {
+    font-size: 12px;
+}
+
+#header .mobile-menu-btn {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    line-height: 46px;
+}
+
+#header .mobile-menu-btn:hover,
+#header .search-btn:hover {
+    background-color: violet;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    color: white;
+    size: 20px;
+    padding: 0 20px;
+}
+
+.content-section {
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 16px 32px;
+    position: relative;
+}
+
+.recipe-list {
+    padding: 2rem 0;
+    font-family: 'Satisfy', 'Sacramento', 'Mr De Haviland', 'Alex Brush';
+    ;
+}
+
+.recipe-title h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    background: rgb(138, 162, 240);
+    color: rgb(255, 255, 255);
+}
+
+.btn-xs {
+    padding: .125rem .25rem;
+    font-size: .9rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #101749;
+    border-color: #101749;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #090d2a;
+    border-color: #070a1f;
+}
+
+.sm2 {
+    font-size: 66.66667% !important;
+}
+
+.Upload {
+    text-align: center;
+}
+
+.imgex {
+    max-height: 232px;
+    margin-bottom: 1px;
+}
+
+#source {
+    max-height: 500px;
+}

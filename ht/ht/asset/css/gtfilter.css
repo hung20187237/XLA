@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.mgt{
+    margin-top: 8px !important; 
+}
+.mgt-16{
+    margin-top: 16px !important;
+}
+
+#header{
+    height: 46px;
+    background-color:rgb(32, 10, 233);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+#nav{
+    display: inline-block;
+    font-family: 'Satisfy', 'Sacramento', 'Mr De Haviland', 'Alex Brush';
+}
+#nav li{
+    display: inline-block;
+}
+#nav > li{
+    position: relative;
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 30px;
+    display: inline-block;
+}
+#nav>li:hover>a{
+    background-color: violet;
+}
+#nav .subnav{
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(218, 0, 207, 0.5);
+    background-color: rgba(167, 3, 158, 0.5)
+}
+#nav .subnav a{
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .subnav li{
+    width: 100%;
+    padding: 0;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover{
+    background-color: violet;
+}
+.ti-angle-down{
+    font-size: 12px;
+}
+#header .mobile-menu-btn{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+}
+#header .mobile-menu-btn:hover,
+#header .search-btn:hover{
+    background-color:violet ;
+}
+#header .menu-icon,
+#header .search-icon{
+    color: white;
+    size: 20px;
+    padding: 0 20px;
+}
+.recipe-list {
+    padding: 4rem 0;
+    font-family: 'Satisfy', 'Sacramento', 'Mr De Haviland', 'Alex Brush'  ;;
+}
+
+.recipe-title h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    background: rgb(138, 162, 240);
+    color: rgb(255, 255, 255);
+}
+
+.product-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+    transition: 500ms;
+    position: relative;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    display: flex;
+    font-family: 'Satisfy', 'Sacramento', 'Mr De Haviland', 'Alex Brush'  ;;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    transition-duration: 150ms;
+    cursor: pointer;
+    transition: all .3 linear;
+    margin-right: 16px;
+}
+
+.img-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 15px grey;
+}
+
+.img-container:hover .detail-btn {
+    transform: translateX(0);
+}
+
+.img-container:hover #zoom  {
+    transform: scale(1.15);
+}
+.img-container:hover #shrink {
+    transform: scale(0.85);
+}
+.img-container:hover #flip {
+    transform: rotateX(180deg);
+}
+.img-container:hover #shift {
+    transform: translateX(20px);
+}
+.img-container:hover #rotation {
+    transform: rotate(90deg);
+}
+.product-img {
+    display: block;
+    width: 100%;
+    transition: 1s;
+}
+
+.detail-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: all 250ms ease;
+    transform: translateX(101%);
+    cursor: pointer;
+}
+
+.detail-btn:hover {
+    color: white;
+    background: green;
+}
+#editimg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#editimg #edit-body{
+    background: rgb(163, 179, 250);
+    width: 1000px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadein ease 0.5s;
+    margin-top: 20px;
+}
+#editimg.open{
+    display: flex;
+    z-index: 100;
+}
+.Cartoonize{
+    color: #000;
+    margin-bottom: 16px;
+
+}
+  
+.placeholder {
+    background: #fdfeff;
+    min-height: 300px;
+}
+  
+.btn-xs {
+    padding: .125rem .25rem;
+    font-size: .9rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+  
+.btn-primary {
+    color: #fff;
+    background-color: #101749;
+    border-color: #101749;
+}
+  
+.btn-primary:hover {
+    color: #fff;
+    background-color: #090d2a;
+    border-color: #070a1f;
+}
+  
+.sm2 {
+    font-size: 66.66667% !important;
+}
+  
+.cursor-pointer {
+    cursor: pointer !important;
+}
+.container-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.container-close:hover{
+    opacity: 1;
+}

@@ -1,0 +1,46 @@
+@media (min-width: 741px){
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 740px){
+    #header{
+        overflow: hidden;
+    }
+    #nav{
+        display: block;
+    }
+    #nav .subnav {
+        position: initial;
+        background-color: rgb(168, 103, 168);
+        padding: 4px 18px;
+    }
+    #nav li{
+        display: block;
+    }
+    #nav li a{
+        display: block;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #content .member-item{
+        margin-top: 30px;
+        width: 50%;
+    }
+    #content .member-img{
+        width: 120px;
+    }
+    #album .album-item{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #concert-section .img-item{
+        width: 100%;
+    }
+}
